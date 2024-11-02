@@ -1,14 +1,13 @@
-const pronoun = ['el', 'los'];
-const adj = ['agua', 'mesa'];
-const noun = ['animales', 'djs'];
+const pronouns = ['el', 'los'];
+const adjectives = ['agua', 'mesa'];
+const nouns = ['animales', 'djs'];
 const domains = ['.cl', '.com'];
 
-
-pronoun.forEach(element1 => {
-    adj.forEach(element2 => {
-        noun.forEach(element3 => {
-            domains.forEach(element4 => {
-                console.log(element1 + element2 + element3 + element4);
+pronouns.forEach(pronoun => {
+    adjectives.forEach(adjective => {
+        nouns.forEach(noun => {
+            domains.forEach(domain => {
+                console.log(`${pronoun}${adjective}${noun}${domain}`);
             });
         });
     });
